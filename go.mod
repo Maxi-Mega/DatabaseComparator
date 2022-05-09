@@ -1,4 +1,4 @@
-module DatabaseComparator
+module github.com/Maxi-Mega/DatabaseComparator
 
 go 1.17
 

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"DatabaseComparator/scripts" // TODO: github link
 	"errors"
 	"fmt"
+	"github.com/Maxi-Mega/DatabaseComparator/scripts"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"
 )

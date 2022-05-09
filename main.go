@@ -19,14 +19,14 @@ func main() {
 	}
 
 	connType1 := parseConnType(&args, "1")
-	db1, err := newDbFrom(connType1)
+	db1, err := newDbFrom(connType1, "1")
 	if err != nil {
 		log.Fatalln(err)
 	}
 	defer db1.close()
 
 	connType2 := parseConnType(&args, "2")
-	db2, err := newDbFrom(connType2)
+	db2, err := newDbFrom(connType2, "2")
 	if err != nil {
 		log.Fatalln(err)
 	}

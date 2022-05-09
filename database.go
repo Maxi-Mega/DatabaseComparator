@@ -6,8 +6,8 @@ import (
 	"log"
 )
 
-func newDbFrom(connType connectionType) (*anyDb, error) {
-	fmt.Println("Connecting with", connType.getConnString())
+func newDbFrom(connType connectionType, id string) (*anyDb, error) {
+	fmt.Printf("Database %s: connecting with %s\n", id, connType.getConnString())
 	conn, err := sql.Open(connType.getDriver(), connType.getConnString())
 	if err != nil {
 		return nil, fmt.Errorf("failed to open the connection: %v", err)
